@@ -1,0 +1,63 @@
+/* Chaoqun Ding */
+
+@font-face {
+    font-family: salsa;
+    src: url(../fonts/Salsa/Salsa-Regular.ttf);
+}
+:root{
+    --main-color: #2f4f4f;
+}
+#wrapper{
+    margin: auto;
+    max-width: 800px;
+    min-height: 100vh;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: auto 1fr auto;
+    font-family: salsa;
+    color: var(--main-color);
+    background-color: white;
+}
+main{
+    display: grid;
+    gap: 10px;
+}
+section{
+    border: solid 1px var(--main-color);
+    border-radius: 10px;
+    padding: 10px;
+
+}
+section:hover{
+    background-color: blanchedalmond;
+}
+header, footer{
+    color: white;
+    background-color: var(--main-color);
+    padding: 10px;
+    text-align: center;
+}
+.error{
+    color: red;
+}
+.avatars{
+    width: 60px;
+    border-radius: 50%;
+    border: double 5px var(--main-color);
+}
+.player_names{
+    display: inline-block;
+}
+.cards_on_hand{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cards{
+    width: 100px;
+}
+/* @media (min-width: 576px) {
+    .cards_on_hand{
+        display: flex;
+    }
+} */
